@@ -5,7 +5,9 @@ import { MongooseModule } from '@nestjs/mongoose';
 
 @Module({
   imports: [ 
-      MongooseModule.forRoot('mongodb://localhost:27017/tasksdb'),
+      MongooseModule.forRoot('mongodb+srv://permissionaryAdmin:PermissionaryAdmin97@permissionariescluster.czamibr.mongodb.net/tasksdb'),
     TasksModule],
 })
 export class AppModule {}
+
+

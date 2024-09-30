@@ -6,6 +6,11 @@ import { CreateTaskDto } from 'src/dto/create-task.dto';
 export class TasksController {
     constructor(private taskService: TasksService){}
 
+    @Get('health-check')
+    async healthCheck () {
+        return "Okidokis :)"
+    }
+
     @Get()
     findAll(){
         return this.taskService.findAll();
